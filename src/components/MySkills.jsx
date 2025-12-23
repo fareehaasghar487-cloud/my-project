@@ -2,13 +2,15 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import {
+  FaNodeJs,
   FaHtml5,
   FaCss3Alt,
   FaJs,
   FaReact,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiWordpress, SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiTailwindcss, SiMongodb } from "react-icons/si";
+
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 const MySkills = () => {
@@ -29,9 +31,9 @@ const MySkills = () => {
     { name: "Framer Motion", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-[#0055FF]" },
     { name: "JavaScript", icon: <FaJs />, percentage: 75, color: "bg-[#F7DF1E]" },
     { name: "React.js", icon: <FaReact />, percentage: 80, color: "bg-[#61DAFB]" },
-    { name: "Express", icon: <SiWordpress />, percentage: 92, color: "bg-[#21759B]" },
-    { name: "NodeJS", icon: <SiWordpress />, percentage: 92, color: "bg-[#21759B]" },
-    { name: "MongoDB", icon: <SiWordpress />, percentage: 85, color: "bg-[#7952B3]" },
+    { name: "Express", icon: <SiExpress  />, percentage: 92, color: "bg-[#21759B]" },
+    { name: "NodeJS", icon: <FaNodeJs  />, percentage: 92, color: "bg-[#21759B]" },
+    { name: "MongoDB", icon: <SiMongodb  />, percentage: 85, color: "bg-[#7952B3]" },
   ];
 
   // Different AOS animations

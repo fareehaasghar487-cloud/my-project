@@ -1,11 +1,12 @@
 import { Fragment, useEffect } from "react";
-import About from "../Images/fakharabbas.jpeg";
+import About from "../Images/fareeha picture.jpeg";
 import resume from "../Images/Fareeha-Asghar-Resume.pdf";
 import {
   FaDownload,
   FaUserTie,
   FaCode,
   FaPalette,
+  FaServer ,
   FaWordpress,
 } from "react-icons/fa";
 import AOS from "aos";
@@ -37,12 +38,12 @@ const AboutMe = () => {
       description: "Building responsive and interactive user interfaces",
       aos: "fade-right",
     },
-    {
-      icon: <FaWordpress className="text-[#21759b] text-xl sm:text-2xl" />,
+      {
+      icon: <FaServer  className="text-[#21759b] text-xl sm:text-2xl" />,
       title: "Backend Dev",
       description: "Custom themes, plugins & CMS-based solutions",
       aos: "fade-up",
-    },
+    },   
     {
       icon: <FaPalette className="text-[#38bdf8] text-xl sm:text-2xl" />,
       title: "UI/UX Design",
@@ -82,7 +83,7 @@ const AboutMe = () => {
 
                 <img
                   src={About}
-                  alt="Fakhar Abbas"
+                  alt="Fareeha Asghar"
                   className="w-full h-full object-cover rounded-full p-3 sm:p-4 border-4 border-[#38bdf8] z-10 relative shadow-xl transition-all duration-700 group-hover:scale-105 group-hover:rotate-3"
                 />
                 <div className="absolute inset-0 rounded-full border-4 border-[#38bdf8] opacity-30 z-0 animate-pulse"></div>
