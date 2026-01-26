@@ -3,13 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// Import your project images
-import img1 from "../Images/shiping.jpg";
-// import img2 from "../Images/lawyer.png";
-import img3 from "../Images/lundary.png";
-import img4 from "../Images/charity.jpeg";
-import img5 from "../Images/carrent.png";
-import img6 from "../Images/foodymat.png";
+
 
 const MyProjects = () => {
   useEffect(() => {
@@ -22,43 +16,38 @@ const MyProjects = () => {
   }, []);
 
   const projects = [
-    {
-      pic: img1,
-      title: "The Givers Consultancy",
-      link: "https://thegiversconsulting.com",
-      category: "Consulting",
-    },
-    // {
-    //   pic: img2,
-    //   title: "Lawyer",
-    //   link: "https://lawyer-pi-three.vercel.app/",
-    //   category: "Law Services",
-    // },
-    {
-      pic: img3,
-      title: "Laundry",
-      link: "https://lundary.vercel.app/",
-      category: "Clothing Brand",
-    },
-    {
-      pic: img4,
-      title: "Charity Blush",
-      link: "https://charity-blush-psi.vercel.app/",
-      category: "Donate",
-    },
-    {
-      pic: img5,
-      title: "Car Rental",
-      link: "https://car-rental-yellow.vercel.app/",
-      category: "Travel & Transportation",
-    },
-    {
-      pic: img6,
-      title: "Foodymat Restaurant",
-      link: "https://restaurant-rho-ruddy.vercel.app/",
-      category: "Restaurant Service Dining",
-    },
-  ];
+  {
+    pic: "/images/Lawyerwebsite.PNG",
+    title: "Lawyer",
+    link: "https://lawyer-pi-three.vercel.app/",
+    category: "Law Services",
+  },
+  {
+    pic: "/images/Laudarywebsite.PNG",
+    title: "Laundry",
+    link: "https://lundary.vercel.app/",
+    category: "Clothing Brand",
+  },
+  {
+    pic: "/images/Charitywebsite.PNG",
+    title: "Charity Blush",
+    link: "https://charity-blush-psi.vercel.app/",
+    category: "Donate",
+  },
+  {
+    pic: "/images/CarRentalWebsite.PNG",
+    title: "Car Rental",
+    link: "https://car-rental-yellow.vercel.app/",
+    category: "Travel & Transportation",
+  },
+  {
+    pic: "/images/FoodDeliveryWebsite.PNG",
+    title: "Foodymat Restaurant",
+    link: "https://restaurant-rho-ruddy.vercel.app/",
+    category: "Restaurant Service Dining",
+  },
+];
+
 
   const [hoveredProject, setHoveredProject] = useState(null);
 
