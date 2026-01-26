@@ -17,31 +17,31 @@ const MyProjects = () => {
 
   const projects = [
   {
-    pic: "/images/Lawyerwebsite.PNG",
+    pic: "/images/Lawyerwebsite.png",
     title: "Lawyer",
     link: "https://lawyer-pi-three.vercel.app/",
     category: "Law Services",
   },
   {
-    pic: "/images/Laudarywebsite.PNG",
+    pic: "/images/Laudarywebsite.png",
     title: "Laundry",
     link: "https://lundary.vercel.app/",
     category: "Clothing Brand",
   },
   {
-    pic: "/images/Charitywebsite.PNG",
+    pic: "/images/Charitywebsite.png",
     title: "Charity Blush",
     link: "https://charity-blush-psi.vercel.app/",
     category: "Donate",
   },
   {
-    pic: "/images/CarRentalWebsite.PNG",
+    pic: "/images/CarRentalWebsite.png",
     title: "Car Rental",
     link: "https://car-rental-yellow.vercel.app/",
     category: "Travel & Transportation",
   },
   {
-    pic: "/images/FoodDeliveryWebsite.PNG",
+    pic: "/images/FoodDeliveryWebsite.png",
     title: "Foodymat Restaurant",
     link: "https://restaurant-rho-ruddy.vercel.app/",
     category: "Restaurant Service Dining",
