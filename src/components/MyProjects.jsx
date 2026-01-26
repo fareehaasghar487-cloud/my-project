@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 // Import your project images
 import img1 from "../Images/shiping.jpg";
-import img2 from "../Images/lawyer.png";
+// import img2 from "../Images/lawyer.png";
 import img3 from "../Images/lundary.png";
 import img4 from "../Images/charity.jpeg";
 import img5 from "../Images/carrent.png";
@@ -28,12 +28,12 @@ const MyProjects = () => {
       link: "https://thegiversconsulting.com",
       category: "Consulting",
     },
-    {
-      pic: img2,
-      title: "Lawyer",
-      link: "https://lawyer-pi-three.vercel.app/",
-      category: "Law Services",
-    },
+    // {
+    //   pic: img2,
+    //   title: "Lawyer",
+    //   link: "https://lawyer-pi-three.vercel.app/",
+    //   category: "Law Services",
+    // },
     {
       pic: img3,
       title: "Laundry",
