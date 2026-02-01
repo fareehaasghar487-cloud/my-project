@@ -27,7 +27,7 @@ const EducationExperience = () => {
       icon: <FaGraduationCap className="text-white text-2xl" />,
     },
      {
-      title: "Information Technology",
+      title: " BS Information Technology",
       period: "2021 - 2025",
       institution: "The Government Sadiq Women Univesity Bahawalpur",
       icon: <FaGraduationCap className="text-white text-2xl" />,
