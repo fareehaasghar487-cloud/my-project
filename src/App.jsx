@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
@@ -12,6 +12,18 @@ import Footer from './components/Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  // Refs for scrolling
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1500);
@@ -59,13 +71,22 @@ function App() {
   return (
     <div className="bg-[#0d0f2b] relative">
       <Navbar />
-      <HeroSection />
+      <HeroSection scrollToProjects={scrollToProjects} scrollToContact={scrollToContact} />
       <AboutMe />
       <MySkills />
       <EducationExperience />
       <MyServices />
-      <MyProjects />
-      <MyContact />
+
+      {/* Projects Section */}
+      <div ref={projectsRef}>
+        <MyProjects />
+      </div>
+
+      {/* Contact Section */}
+      <div ref={contactRef}>
+        <MyContact />
+      </div>
+
       <Footer />
 
       {/* WhatsApp Icon */}

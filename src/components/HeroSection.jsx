@@ -1,11 +1,11 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { FaPaperPlane, FaRocket, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import Hero from "../Images/fareeha picture.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const HeroSection = () => {
+const HeroSection = ({ scrollToProjects, scrollToContact }) => {
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -40,24 +40,21 @@ const HeroSection = () => {
     <Fragment>
       <section
         id="home"
-        className="relative flex justify-center items-center min-h-screen 
-                   px-6 sm:px-8 md:px-12 lg:px-20 bg-gray-900 overflow-hidden pt-10 sm:pt-20"
+        className="relative flex justify-center items-center min-h-screen px-6 sm:px-8 md:px-12 lg:px-20 bg-gray-900 overflow-hidden pt-10 sm:pt-20"
       >
         {/* Background Effects */}
         <div className="absolute inset-0 overflow-hidden">
           <div
             data-aos="zoom-in"
-            className="absolute top-20 left-10 sm:left-20 w-16 sm:w-20 h-16 sm:h-20 
-                       rounded-full bg-cyan-400 opacity-20 blur-3xl animate-float"
+            className="absolute top-20 left-10 sm:left-20 w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-cyan-400 opacity-20 blur-3xl animate-float"
           ></div>
           <div
             data-aos="zoom-out"
-            className="absolute bottom-10 right-10 sm:right-20 w-24 sm:w-28 h-24 sm:h-28 
-                       rounded-full bg-cyan-600 opacity-20 blur-3xl animate-float-delay"
+            className="absolute bottom-10 right-10 sm:right-20 w-24 sm:w-28 h-24 sm:h-28 rounded-full bg-cyan-600 opacity-20 blur-3xl animate-float-delay"
           ></div>
         </div>
 
-        {/* ✅ Changed flex direction */}
+        {/* Flex Container */}
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 w-full max-w-7xl z-10 py-20">
           {/* Left Section */}
           <div className="w-full md:w-1/2 text-center md:text-start">
@@ -81,7 +78,7 @@ const HeroSection = () => {
             >
               <span className="text-white">
                 <Typewriter
-                  words={["Front-End Developer", "UI/UX Designer", "Backend developer", "Web Enthusiast"]}
+                  words={["Front-End Developer", "UI/UX Designer", "Backend Developer", "Web Enthusiast"]}
                   loop
                   cursor
                   cursorStyle="_"
@@ -96,15 +93,17 @@ const HeroSection = () => {
               data-aos="fade-up"
               className="text-gray-300 text-base sm:text-lg mb-8 max-w-lg mx-auto md:mx-0"
             >
-              I design modern, responsive websites with clean code,<span className="text-[#38bdf8] font-semibold"> fluid animations </span> &
-              <span className="text-[#0ea5e9] font-semibold"> intuitive user experiences, </span>  
-                  delivering engaging digital solutions that merge creativity, performance, and seamless functionality.
+              I design modern, responsive websites with clean code,
+              <span className="text-[#38bdf8] font-semibold"> fluid animations </span>&
+              <span className="text-[#0ea5e9] font-semibold"> intuitive user experiences, </span>
+              delivering engaging digital solutions that merge creativity, performance, and seamless functionality.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-row gap-3 sm:gap-4 mb-10 justify-center sm:justify-start">
               {/* Contact Me */}
               <button
+                onClick={scrollToContact}
                 data-aos="fade-down"
                 className="relative bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] 
                            text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full font-semibold 
@@ -119,6 +118,7 @@ const HeroSection = () => {
 
               {/* View Projects */}
               <button
+                onClick={scrollToProjects}
                 data-aos="fade-up"
                 className="relative border-2 border-[#38bdf8] text-[#38bdf8] px-4 py-2 sm:px-6 sm:py-3 
                            rounded-full font-semibold text-sm sm:text-base flex items-center gap-2 
@@ -178,7 +178,7 @@ const HeroSection = () => {
                 Frontend Developer
               </div>
               <div className="absolute bottom-2 right-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs sm:text-sm md:text-base font-semibold px-3 py-1 rounded-full shadow-lg">
-                Backend developer
+                Backend Developer
               </div>
             </div>
           </div>
