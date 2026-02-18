@@ -31,7 +31,7 @@ const MyContact = () => {
   const contactInfo = [
     { icon: <MdLocationPin className="text-3xl text-[#38bdf8]" />, text: "Bahawalpur, Punjab, Pakistan", link: "#" },
     { icon: <MdOutlineAlternateEmail className="text-3xl text-[#38bdf8]" />, text: "fareehaasghar487@gmail.com", link: "mailto:fareehaasghar487@gmail.com" },
-    { icon: <FaPhoneAlt className="text-3xl text-[#38bdf8]" />, text: "+92 300-1487487", link: "tel:+923001587487" },
+    { icon: <FaPhoneAlt className="text-3xl text-[#38bdf8]" />, text: "+92 300-1234567", link: "tel:+923001587487" },
       
   ];
 
